@@ -26,6 +26,7 @@ console.log(a.reverse());
 
 */
 
+/*
 let ism = ['Jaloliddin', 'Salom' , 20 , 'Andijon' ]
 
 
@@ -39,4 +40,62 @@ let l = JSON.parse(localStorage.getItem('name'))
 console.log( l[0]);
 
 
-// localStorage.clear(l)
+localStorage.clear(l)
+*/
+/*
+const request = new XMLHttpRequest()
+
+
+request.addEventListener('readystatechange', () => {
+ // console.log(request, request.readyState);
+
+ if (request.readyState === 4) {
+   console.log(request.responseText);
+ }
+ console.log();
+})
+
+
+// OPEN 
+
+request.open('GET', 'https://jsonplaceholder.typicode.com/todos/')
+
+request.send()
+
+*/
+
+// for (let i = 5; i < 8; i++) {
+
+//   for (let j = i; j < 15; j++) {
+//       console.log(i , 'a \n' + j);    
+//   }
+// }
+
+
+// let a = Number(prompt("Son kiriting:"));
+// let b = Number(prompt("Son kiriting:"));
+
+// function sum(s) {
+//   let x = s * 2
+//   return x;
+// }
+// function sum2(v) {
+//   return (v * 2) + sum(a);
+// }
+
+// console.log(sum2(b));
+let a = Number(prompt("Son kiriting:"));
+// let b = Number(prompt("Son kiriting:"));
+
+function sum(s) {
+ 
+  return s % 2 == 0 ? "Juft" : "Toq" ;
+}
+function sum2(v) {
+  console.log(sum(v));
+}
+
+sum2(a)
+
+// console.log(sum2(b));
+
